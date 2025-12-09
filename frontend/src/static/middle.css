@@ -1,0 +1,173 @@
+
+/*------------------------------- Advertisement --------------------------------------*/
+
+#IAdvertisement  #someProducts {
+    display:flex ; 
+    flex-direction: column;
+  }
+
+  #IAdvertisement #c1Products
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  #IAdvertisement  .marketplace-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    min-height: 220vh;
+  }
+  
+  #IAdvertisement #someProducts .card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #IAdvertisement .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  #IAdvertisement  #someProducts .card h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:black ; 
+  }
+  
+  #IAdvertisement #someProducts .card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  #IAdvertisement .discount-label {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  #IAdvertisement  .tshirt-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  @media (max-width: 992px) {
+    #IAdvertisement .marketplace-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #IAdvertisement .marketplace-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  #IAdvertisement #someProducts .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+#IAdvertisement #someProducts .col-md-3 {
+    flex: 1 1 23%; 
+    max-width: 23%;
+}
+
+@media (max-width: 992px) {
+    #someProducts .col-md-3 {
+        flex: 1 1 48%;
+        max-width: 48%; 
+    }
+}
+
+@media (max-width: 768px) {
+    #someProducts .col-md-3 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+
+/*-------------------- Pretty------------------------------*/
+#c2Products .shadow {
+    position: relative;
+    margin: 100px auto 0;
+    width: 400px;
+    height: 250px;
+    background: linear-gradient(0deg, #000, #262626);
+    border-radius: 10px;
+  }
+  
+  #c2Products .shadow:before, .shadow:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg, white, gold, aqua, #ffff00, gold, aqua, aqua, #00ff00, #ffff00, gold);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+    border-radius: 10px;
+  }
+  
+  #c2Products .shadow:after {
+    filter: blur(20px);
+  }
+  
+  #c2Products .header {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  #someProducts h5 {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #fb0094;
+    background-image: -webkit-linear-gradient(92deg, #fb600069, #0004ff, #00ff005f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+  }
+  
+  @-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+      -webkit-filter: hue-rotate(-360deg);
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 300% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+  /*--------------------------*/
+  .img-slide {
+    max-width: 100%;  
+    max-height: 100%;
+    object-fit: contain; 
+  }
+  

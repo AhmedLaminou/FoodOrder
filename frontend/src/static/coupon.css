@@ -1,0 +1,87 @@
+
+/*---------------------------- CouponPage ----------------------------------*/
+
+#couponPage .container {
+    padding: 20px;
+    max-width: 900px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+#couponPage h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: gold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 4px 6px rgba(0, 255, 255, 0.5);
+}
+
+#couponPage .list-group {
+    margin: 0;
+    padding: 0;
+}
+
+#couponPage .list-group-item {
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#couponPage .list-group-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+#couponPage .list-group-item h5 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: gold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#couponPage .list-group-item p {
+    font-size: 1.1rem;
+    color: #ff6347; 
+    margin: 5px 0;
+}
+
+#couponPage .list-group-item p strong {
+    font-size: 1.2rem;
+    color: #ff6347;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#couponPage .list-group-item {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    #couponPage h2 {
+        font-size: 1.8rem;
+    }
+    #couponPage .list-group-item {
+        padding: 15px;
+    }
+    #couponPage .list-group-item h5 {
+        font-size: 1.4rem;
+    }
+    #couponPage .list-group-item p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,189 @@
+#header
+{
+    min-height:700px ; 
+}
+
+
+/*------------------------------------- The GetGoing Header --------------------------*/
+#header h1 , #header  h2 {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, gold, #fff, gold);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    text-align:center ; 
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
+/*-------------------------- About Our Fiability ------------------------------------*/
+#aboutOurFiability {
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+#aboutOurFiability {
+    margin-top:10px ; 
+}
+
+#aboutOurFiability .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+#aboutOurFiability .card {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    width: 280px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px #00ff99;
+    border: 2px solid gold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#aboutOurFiability .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+}
+
+#aboutOurFiability .card h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+#aboutOurFiability .ourAdvantage {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00ffff;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.6);
+}
+
+#aboutOurFiability .card p {
+    font-size: 14px;
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+@keyframes glitch {
+    0% { text-shadow: 2px 2px 0px rgba(0, 255, 255, 0.8), -2px -2px 0px rgba(255, 0, 255, 0.8); }
+    50% { text-shadow: -2px -2px 0px rgba(0, 255, 255, 0.8), 2px 2px 0px rgba(255, 0, 255, 0.8); }
+    100% { text-shadow: 2px 2px 0px rgba(0, 255, 255, 0.8), -2px -2px 0px rgba(255, 0, 255, 0.8); }
+}
+
+#aboutOurFiability .ourAdvantage:hover {
+    animation: glitch 0.2s infinite;
+}
+ 
+#aboutOurFiability .card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.3) 10%, transparent 70%);
+    transform: rotate(30deg);
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+#aboutOurFiability .card:hover::before {
+    opacity: 1;
+}
+
+/*------------------ Card Styles -------------------------------------------*/
+.cart-icon-container {
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.cart-icon-container:hover {
+  transform: scale(1.1);
+}
+
+.cart-badge {
+  font-size: 0.7rem;
+  padding: 0.25em 0.4em;
+  min-width: 1.5em;
+  transform: translate(-50%, -50%) !important;
+}
+
+/* Animation for cart updates */
+@keyframes cartBounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.cart-icon-container.updated {
+  animation: cartBounce 0.3s ease;
+}
+
+/* Make icons more visible */
+.text-light {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.text-light:hover {
+  color: #fff !important;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.btn-outline-light {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+  transform: translateY(-1px);
+}
+
+.btn-light {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+  background-color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-sm {
+  padding: 0.4rem 1rem;
+  font-size: 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}

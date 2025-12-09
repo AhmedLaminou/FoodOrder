@@ -1,0 +1,86 @@
+
+/*------------------------- NotificationPage --------------------------------*/
+
+#notificationPage .container {
+    max-width: 900px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); 
+}
+
+#notificationPage h2 {
+    font-size: 2rem;
+    color: #00f7ff; 
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 0 4px 8px rgba(0, 255, 255, 0.5);
+}
+
+#notificationPage .list-group {
+    margin: 0;
+    padding: 0;
+}
+
+#notificationPage .list-group-item {
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+#notificationPage .list-group-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+#notificationPage .list-group-item h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00f7ff;
+    margin-bottom: 10px;
+}
+
+#notificationPage .list-group-item p {
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    margin: 5px 0;
+}
+
+#notificationPage .list-group-item p:first-child {
+    font-weight: bold;
+    color: #ff6347; 
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#notificationPage .list-group-item {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    #notificationPage .container {
+        padding: 20px;
+    }
+    #notificationPage h2 {
+        font-size: 1.8rem;
+    }
+    #notificationPage  .list-group-item {
+        padding: 15px;
+    }
+    #notificationPage .list-group-item h5 {
+        font-size: 1.4rem;
+    }
+    #notificationPage .list-group-item p {
+        font-size: 1rem;
+    }
+}

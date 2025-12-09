@@ -1,0 +1,135 @@
+
+  
+/*---------------------------------------- PromotionPage ---------------------------------------------*/
+
+#promotionPage {
+  padding: 60px 0;
+}
+
+#promotionPage  h2 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#promotionPage  .card {
+  position: relative;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#promotionPage  .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+}
+
+#promotionPage  .card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  filter: brightness(0.8);
+  transition: filter 0.3s ease-in-out;
+}
+
+#promotionPage  .card-img-top:hover {
+  filter: brightness(1);
+}
+
+#promotionPage  .card-body {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+#promotionPage  .card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f9f9f9;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#promotionPage  .card-text {
+  font-size: 1rem;
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#promotionPage .card-text strong {
+  color: #fff;
+}
+
+#promotionPage  .card-body p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+}
+
+#promotionPage  .card-body p strong {
+  color: #f4c542;
+}
+
+#promotionPage .card-body p:last-child {
+  font-size: 1.1rem;
+  color: #66b2ff;
+}
+
+@media (max-width: 768px) {
+  #promotionPage  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+#promotionPage  .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+#promotionPage  .col-md-4 {
+  flex: 0 0 32%;
+  max-width: 32%;
+}
+
+@media (max-width: 991px) {
+  #promotionPage  .col-md-4 {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+}
+
+@media (max-width: 576px) {
+  #promotionPage  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+#promotionPage .card-body .btn {
+  background: linear-gradient(45deg, #ff6e7f, #d6a4a4);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#promotionPage  .card-body .btn:hover {
+  background: linear-gradient(45deg, #d6a4a4, #ff6e7f);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}

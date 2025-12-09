@@ -1,0 +1,112 @@
+
+/*------------------------- HomePage ------------------------------*/
+
+#homePage {
+    background-color: #121212;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+  
+  #homePage .welcome-text {
+    font-size: 3em;
+    color: #00ff99;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px;
+    animation: fadeIn 2s ease-in-out;
+  }
+ 
+  #homePage  .button-container {
+    margin-bottom: 20px;
+  }
+  
+  #homePage .btn-futuristic {
+    background: linear-gradient(45deg, #00ff99, #00cc66);
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  #homePage .btn-futuristic:hover {
+    background: linear-gradient(45deg, #00cc66, #00ff99);
+    transform: scale(1.05);
+  }
+  
+
+  #homePage .auth-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  #homePage .btn-auth {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  #homePage .btn-auth:hover {
+    background-color: #444;
+    transform: scale(1.05);
+  }
+  
+  #homePage .btn-signup {
+    background-color: #007bff;
+  }
+  
+  #homePage .btn-login {
+    background-color: #28a745;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+ 
+  @media (max-width: 768px) {
+    #homePage .welcome-text {
+      font-size: 2.5em;
+    }
+    #homePage .btn-futuristic {
+      font-size: 1em;
+      padding: 12px 25px;
+    }
+    #homePage .btn-auth {
+      font-size: 1em;
+      padding: 12px 20px;
+    }
+  }
+
+  /*------------------------------------------------------------------------------------------------*/
+#IAdvertisement
+{
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+  

@@ -1,0 +1,132 @@
+
+  h2 {
+    font-size: 2.7rem;
+    color: #ffcc70;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(255, 204, 112, 0.4);
+    animation: glowTitle 2s infinite alternate;
+  }
+  
+  @keyframes glowTitle {
+    0% { text-shadow: 0 0 10px rgba(255, 204, 112, 0.4); }
+    100% { text-shadow: 0 0 20px rgba(255, 204, 112, 0.8); }
+  }
+ 
+  .form-label {
+    color: #ffd700;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    display: block;
+    font-size: 1.1rem;
+    text-shadow: 0 0 3px rgba(255, 215, 0, 0.3);
+  }
+
+  .form-select {
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #1f1f1f, #292929);
+    border: 1px solid #444;
+    color: #ffd700;
+    font-size: 1rem;
+    transition: all 0.4s ease;
+    box-shadow: inset 0 0 6px rgba(255, 215, 0, 0.1);
+    backdrop-filter: blur(5px);
+  }
+  .form-select:hover,
+  .form-select:focus {
+    background: linear-gradient(135deg, #292929, #333);
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.5);
+    border-color: #ffd700;
+    outline: none;
+  }
+
+  .form-range {
+    width: 100%;
+    margin-top: 0.8rem;
+    appearance: none;
+    height: 6px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #ffd700, #ffcc70);
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #ffd700;
+    transition: transform 0.3s ease;
+  }
+  input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #ffd700;
+    transition: transform 0.3s ease;
+  }
+  input[type="range"]::-moz-range-thumb:hover {
+    transform: scale(1.2);
+  }
+
+  .d-flex.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+    color: #888;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  /* CARD WRAPPER (Hover Effect) */
+  .menu-card-wrapper {
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 18px;
+    padding: 1.2rem;
+    width: 280px;
+    backdrop-filter: blur(6px);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  .menu-card-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255, 215, 0, 0.2), transparent 70%);
+    animation: pulse 6s infinite linear;
+  }
+  @keyframes pulse {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    100% {
+      transform: rotate(360deg) scale(1.2);
+    }
+  }
+  .menu-card-wrapper:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+  }
+  

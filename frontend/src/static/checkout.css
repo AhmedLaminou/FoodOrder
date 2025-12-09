@@ -1,0 +1,159 @@
+
+/* --- Modern Glassmorphism Checkout Styles --- */
+
+body {
+    
+    min-height: 100vh;
+}
+
+.checkout-container {
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(30, 60, 120, 0.18), 0 1.5px 8px rgba(30,60,120,0.07);
+    padding: 48px 32px 32px 32px;
+    max-width: 600px;
+    margin: 48px auto 32px auto;
+    border: 1.5px solid rgba(255,255,255,0.3);
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    letter-spacing: 0.04em;
+    color: #1a2540;
+    font-weight: 800;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #2193b0 0%, #6dd5ed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.order-summary {
+    background: rgba(255,255,255,0.7);
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(33,147,176,0.07);
+    margin-bottom: 32px;
+    padding: 24px 20px 18px 20px;
+    border-bottom: 2px solid #e0eafc;
+}
+
+.order-summary h3 {
+    color: #2193b0;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed #e0eafc;
+    font-size: 1.08rem;
+    color: #1a2540;
+    transition: background 0.2s;
+}
+.cart-item:last-child {
+    border-bottom: none;
+}
+.cart-item:hover {
+    background: rgba(33,147,176,0.06);
+}
+
+.total {
+    margin-top: 14px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-align: right;
+    color: #2193b0;
+}
+
+.checkout-map-block {
+    margin-bottom: 28px;
+    background: rgba(255,255,255,0.72);
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(33,147,176,0.06);
+    padding: 18px 16px 10px 16px;
+}
+.selected-coords {
+    font-size: 1rem;
+    margin-top: 0.6rem;
+    color: #2193b0;
+    font-weight: 500;
+}
+
+.checkout-form {
+    margin-bottom: 20px;
+}
+.checkout-form label {
+    display: block;
+    margin-top: 18px;
+    font-size: 1.08rem;
+    color: #1a2540;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+
+.checkout-form textarea,
+.checkout-form select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.08rem;
+    margin-top: 8px;
+    border: 1.5px solid #b6d0e2;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.55);
+    box-shadow: 0 1px 4px rgba(33,147,176,0.03);
+    transition: border 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+.checkout-form textarea:focus,
+.checkout-form select:focus {
+    border: 1.5px solid #2193b0;
+    box-shadow: 0 0 0 2px #6dd5ed33;
+}
+
+.checkout-form button {
+    margin-top: 28px;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #2193b0 0%, #6dd5ed 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(33,147,176,0.09);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.08s;
+}
+.checkout-form button:hover {
+    background: linear-gradient(90deg, #6dd5ed 0%, #2193b0 100%);
+    box-shadow: 0 4px 18px rgba(33,147,176,0.13);
+    transform: translateY(-1.5px) scale(1.015);
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    .checkout-container {
+        padding: 18px 4vw 24px 4vw;
+        max-width: 98vw;
+    }
+    .order-summary, .checkout-map-block {
+        padding: 12px 4vw 10px 4vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .checkout-container {
+        padding: 8px 2vw 12px 2vw;
+        border-radius: 10px;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+}

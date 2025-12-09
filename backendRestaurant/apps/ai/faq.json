@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Quels sont les horaires d'ouverture du restaurant ?",
+    "answer": "Nous sommes ouverts tous les jours de 12h à 23h."
+  },
+  {
+    "question": "Proposez-vous des options végétariennes ?",
+    "answer": "Oui, nous avons plusieurs plats végétariens sur notre menu."
+  },
+  {
+    "question": "Puis-je réserver une table en ligne ?",
+    "answer": "Oui, vous pouvez réserver une table via notre site web ou en utilisant ce chat."
+  },
+  {
+    "question": "Où êtes-vous situés ?",
+    "answer": "Nous sommes situés au 123 Rue de la Gastronomie, Paris."
+  },
+  {
+    "question": "Faites-vous la livraison à domicile ?",
+    "answer": "Oui, la livraison est disponible via nos partenaires habituels."
+  }
+]

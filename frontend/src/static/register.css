@@ -1,0 +1,121 @@
+
+/*----------------------------------- RegisterPage ------------------------------------*/
+
+#registerPage .container {
+    max-width: 600px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+}
+
+#registerPage .container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 30px 60px rgba(0, 255, 255, 0.4);
+}
+
+#registerPage .card-header {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00f7ff; 
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 8px rgba(0, 255, 255, 0.5); 
+}
+
+#registerPage .form-control {
+    background: rgba(255, 255, 255, 0.1); 
+    color: #fff;
+    border: 1px solid #00f7ff; 
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#registerPage .form-control:focus {
+    background: rgba(0, 255, 255, 0.2);
+    transform: scale(1.05);
+    border-color: #00f7ff;
+    outline: none;
+}
+
+#registerPage button {
+    background-color: #00f7ff;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#registerPage button:hover {
+    background-color: #00b3b3;
+    transform: translateY(-5px);
+}
+
+#registerPage .alert-danger {
+    background-color: rgba(255, 0, 0, 0.8);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+#registerPage .card-body {
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+    }
+}
+
+#registerPage .container {
+    animation: pulse 3s infinite;
+}
+
+
+@media (max-width: 768px) {
+    #registerPage .container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    #registerPage .card-header {
+        font-size: 1.5rem;
+    }
+
+    #registerPage .form-control {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    #registerPage button {
+        font-size: 1.2rem;
+    }
+}

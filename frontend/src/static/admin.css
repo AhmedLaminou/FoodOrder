@@ -1,0 +1,222 @@
+
+:root {
+  --primary-gradient: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+  --secondary-gradient: linear-gradient(135deg, #FF6B6B 0%, #FF000F 100%);
+  --success-gradient: linear-gradient(135deg, #28C76F 0%, #48DAA1 100%);
+  --warning-gradient: linear-gradient(135deg, #FFB86C 0%, #FF6B6B 100%);
+}
+
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.stats-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.stats-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+}
+
+.stats-card:hover::before {
+  opacity: 1;
+}
+
+.chart-container {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  padding: 24px;
+  margin: 16px 0;
+}
+
+.chart-title {
+  color: #333;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.MuiDrawer-paper {
+  background: #fff !important;
+  border-right: none !important;
+  box-shadow: 4px 0 24px rgba(0,0,0,0.05) !important;
+}
+
+.sidebar-logo {
+  padding: 24px 16px;
+  background: var(--primary-gradient);
+  margin-bottom: 8px;
+}
+
+.sidebar-logo h6 {
+  color: white !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px;
+}
+
+.MuiListItemButton-root {
+  border-radius: 12px !important;
+  margin: 4px 8px !important;
+  padding: 12px 16px !important;
+  transition: all 0.3s ease !important;
+}
+
+.MuiListItemButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+.MuiListItemButton-root.active {
+  background: var(--primary-gradient) !important;
+}
+
+.MuiListItemButton-root.active .MuiListItemIcon-root,
+.MuiListItemButton-root.active .MuiListItemText-primary {
+  color: white !important;
+}
+
+.dashboard-content {
+  padding: 24px;
+  width: 100%;
+}
+
+.page-header {
+  margin-bottom: 32px;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.page-subtitle {
+  color: #666;
+  font-size: 1rem;
+}
+
+.MuiTableContainer-root {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  margin: 16px 0;
+}
+
+.MuiTableHead-root {
+  background: #f8f9fa;
+}
+
+.MuiTableCell-head {
+  font-weight: 600 !important;
+  color: #333 !important;
+}
+
+.MuiTableRow-root:hover {
+  background-color: rgba(0,0,0,0.02) !important;
+}
+
+.action-button {
+  border-radius: 8px !important;
+  text-transform: none !important;
+  padding: 8px 16px !important;
+  font-weight: 600 !important;
+}
+
+.action-button.primary {
+  background: var(--primary-gradient) !important;
+  color: white !important;
+}
+
+.action-button.secondary {
+  background: var(--secondary-gradient) !important;
+  color: white !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-content {
+    padding: 16px;
+  }
+  
+  .page-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .stats-card {
+    margin-bottom: 16px;
+  }
+  
+  .chart-container {
+    margin: 12px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-content {
+    padding: 12px;
+  }
+  
+  .page-title {
+    font-size: 1.5rem;
+  }
+  
+  .MuiListItemButton-root {
+    padding: 8px 12px !important;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}

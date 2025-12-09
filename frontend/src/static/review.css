@@ -1,0 +1,195 @@
+
+/*---------------------------------ReviewForm-----------------------------------------------*/
+
+#reviewForm {
+    background-color: #f8f9fa; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #reviewForm .form-label {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  #reviewForm .form-control {
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  #reviewForm button {
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #reviewForm button:hover {
+    background-color: #007bff;
+  }
+
+/*------------------------------------ReviewList-------------------------------------*/
+
+#reviewList .card {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  #reviewList .card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  #reviewList .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  #reviewList .card-subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  #reviewList .card-text {
+    font-size: 1rem;
+    color: #495057;
+  }
+
+  #reviewList  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #343a40;
+  }
+  
+  #reviewList button {
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 5px;
+  }
+  
+  #reviewList button:hover {
+    background-color: #f1f1f1;
+    border-color: #007bff;
+  }
+
+/*------------------------ ReviewImageUpload ------------------------------------*/
+
+#reviewImageUpload {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  #reviewImageUpload .form-control-file {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  #reviewImageUpload button[type="submit"] {
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #reviewImageUpload button[type="submit"]:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+
+  #reviewImageUpload .alert {
+    font-size: 1.1rem;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  #reviewImageUpload .alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  #reviewImageUpload .alert-success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+
+
+/*---------------------------------- TagManager -------------------------------*/
+
+.tag-manager {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .tag-manager:hover {
+    transform: scale(1.05);
+  }
+
+  .tag-input {
+    width: 80%;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 2px solid #555;
+    background-color: transparent;
+    color: #f0f0f0;
+    text-align: center;
+    outline: none;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .tag-input:focus {
+    border-color: #7a2aff;
+    box-shadow: 0 0 10px #7a2aff;
+    background-color: rgba(122, 42, 255, 0.1);
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .add-btn,
+  .remove-btn {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .add-btn {
+    background: linear-gradient(135deg, #7a2aff, #2b2dff);
+    color: #fff;
+    border: 2px solid #7a2aff;
+  }
+  
+  .add-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #2b2dff, #7a2aff);
+  }
+  
+  .remove-btn {
+    background: linear-gradient(135deg, #ff4747, #f9a8b1);
+    color: #fff;
+    border: 2px solid #ff4747;
+  }
+  
+  .remove-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #f9a8b1, #ff4747);
+  }
+  
+  
+  

@@ -1,0 +1,128 @@
+
+#contactPage .contact-container {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+#contactPage .contact-header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#contactPage  .contact-header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#contactPage .contact-header p {
+    font-size: 1.2em;
+}
+
+#contactPage  .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+    text-align: center;
+}
+
+#contactPage  .contact-item {
+    max-width: 300px;
+    margin: 0 20px;
+}
+
+#contactPage  .contact-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#contactPage  .contact-info p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+#contactPage .contact-form {
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#contactPage .contact-form h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#contactPage  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contactPage .form-group {
+    margin-bottom: 20px;
+}
+
+#contactPage .form-group label {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+#contactPage .form-group input,
+#contactPage .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+#contactPage .form-group textarea {
+    min-height: 150px;
+}
+
+#contactPage .submit-btn {
+    background-color: #5cb85c;
+    color: white;
+    font-size: 1.2em;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactPage .submit-btn:hover {
+    background-color: #4cae4c;
+}
+
+.form-status {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    #contactPage  .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contactPage  .contact-item {
+        margin-bottom: 30px;
+    }
+
+    #contactPage  .contact-form h2 {
+        font-size: 2em;
+    }
+}
