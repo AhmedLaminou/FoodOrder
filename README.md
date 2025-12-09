@@ -1,6 +1,8 @@
 # Restaurant Mobile Application
-![]
-
+![1.png]
+![2.png]
+![3.png]
+![4.png]
 A modern, cross-platform mobile application for a restaurant, built with React Native and Django REST framework. This application allows users to browse the menu, view food items, add them to cart, and place orders.
 
 ## Features
